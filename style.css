@@ -1,0 +1,32 @@
+#game-container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+#game-board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+
+.cell:hover {
+    background-color: #eee;
+    cursor: pointer;
+}

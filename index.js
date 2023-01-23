@@ -49,10 +49,12 @@ function handleCellClick(event) {
     cellElement.innerHTML = currentPlayer;
 
     
-    if(cellElement.innerHTML == "O"){
-        cellElement.style.backgroundColor = "green";
+  if(cellElement.innerHTML == "O"){
+            cellElement.style.color = "green";
+        cellElement.style.backgroundColor = "white";
     }else{
-        cellElement.style.backgroundColor = "red";
+              cellElement.style.color = "red";
+        cellElement.style.backgroundColor = "white";
     }
 
     // check if the game is over

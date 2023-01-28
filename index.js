@@ -59,6 +59,9 @@ function handleCellClick(event) {
 
     // check if the game is over
     var gameOver = checkForWin(currentPlayer);
+if(gameOver) {
+     newGame();
+   }
     if (gameOver) {
         alert(currentPlayer + " wins!");
         sendData(currentPlayer);
